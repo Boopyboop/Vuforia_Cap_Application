@@ -35,7 +35,7 @@ public class ApplicationScript : MonoBehaviour {
         positiontexte.y = 0.5f;
         positiontexte.y = 0.0f;
         textGO.transform.parent = imageSalle.transform;
-        textGO.transform.position= imageSalle.transform.position+ positiontexte;
+        textGO.transform.position= imageSalle.transform.position+ positiontexte; //on veut que le texte apparaisse un peu au dessus de l'image
         texteaffiche = "salle de reunion 1";
 
         // Set Text component properties.
@@ -77,12 +77,10 @@ public class ApplicationScript : MonoBehaviour {
             {
                 boolDescription = false;
                 boolSalle = false;
-                textMesh.text = "pas de lien pour cette salle pour l'instant";
+                textMesh.text = "pas de lien SKYPE pour cette sallE";
             }
         }
         //afficher texteaffiche
-        //textMesh = textGO.GetComponent<TextMesh>();
-        //textMesh.text = texteaffiche.ToString();
         Debug.Log("texte affiché =" + texteaffiche);
         Debug.Log("salle =" + Salle);
 
